@@ -98,6 +98,7 @@ public class SortingAlgorithms {
 	}
 	
 	//bubble sort (Worst Case is n^2)
+	//loop array bubbling the largest value to the end of the array.
 	public void bubbleSort() {
 		
 		for(int i = arraySize -1; i > 1; i--) {
@@ -116,6 +117,7 @@ public class SortingAlgorithms {
 	}
 	
 	//selection sort (Worst Case n^2)
+	//loop through array checking for the min. once min is found swap it with the current position of i
 	public void selectionSort() {
 		
 		for(int i = 0; i < arraySize; i++) {
@@ -178,12 +180,12 @@ public class SortingAlgorithms {
 		
 		//newArray.bubbleSort();
 		
-		//newArray.selectionSort();
+		newArray.selectionSort();
 		
 		//newArray.insertionSort();
 		
-		MergeSort ms = new MergeSort();
-		ms.generateRandomArray();
-		ms.mergeSort();
+		//MergeSort ms = new MergeSort();
+		//ms.generateRandomArray();
+		//ms.mergeSort();
 	}
 }
